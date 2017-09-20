@@ -145,7 +145,7 @@ def dataset_load( name, data, lang ):
             try:
                 send_request( name, method="PUT", body=data, query_string=qs )
                 count += len(lines)
-                print("Loaded {} entities so far".format(count))
+                print("Loaded {} entities so far".format(count - 1))
                 
             except Exception as error:
                 # Print error message in the event of an exception and return
